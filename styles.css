@@ -8,3 +8,16 @@ form {
   gap: 10px;
   align-items: center;
 }
+
+table {
+  margin-bottom: 30px;
+  border: 1px solid black;
+  padding: 20px;
+}
+.title {
+  padding: 10px;
+}
+td {
+  border: 1px solid black;
+  padding: 10px;
+}

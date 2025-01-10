@@ -51,3 +51,22 @@ function displayBooks() {
     tableBody.appendChild(row);
   }
 }
+
+const form = document.querySelector("form");
+
+form.addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const title = document.querySelector("#title").value;
+  const author = document.querySelector("#author").value;
+  const pages = document.querySelector("#pages").value;
+  const read = document.querySelector("#read").checked;
+
+  addBookToLibrary(title, author, pages, read);
+  displayBooks();
+
+  document.querySelector("#title").value = "";
+  document.querySelector("#author").value = "";
+  document.querySelector("#pages").value = "";
+  document.querySelector("#read").checked = false;
+});
