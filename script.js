@@ -24,7 +24,7 @@ console.log(myLibrary);
 displayBooks();
 
 function displayBooks() {
-  const tableBody = document.getElementById("info tbody");
+  const tableBody = document.getElementById("info");
   tableBody.innerHTML = "";
 
   for (let i = 0; i < myLibrary.length; i++) {
